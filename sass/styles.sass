@@ -31,7 +31,7 @@
 			padding: 1rem
 
 		img 
-			width: 20%
+			width: 25%
 			height: auto
 
 			@include mobile
@@ -79,7 +79,11 @@
 
 .empresa-container
 	text-align: center
-	padding: 0 2rem
+	padding: 0 3rem 2rem 3rem
+	border-bottom: 1px solid $cinza-claro
+
+	@include mobile
+		padding: 0 2rem 2rem 2rem
 
 	h2
 		@extend %empresa-title
@@ -102,8 +106,11 @@
 
 .services-container
 	text-align: center
-	padding: 2rem
-	margin-bottom: 2rem
+	padding: 1rem 3rem 3rem 3rem
+	border-bottom: 1px solid $cinza-claro
+
+	@include mobile
+		padding: 1rem 2rem 3rem 2rem
 
 	h2
 		@extend %section-title
@@ -146,9 +153,8 @@
 				border: transparent
 				box-shadow: 0 1px 10px #CCC 
 
-
 .jobs-container
-	background-color: $secondary-bg
+	background-color: $white
 	padding: 1rem 3rem
 
 	@include mobile
@@ -168,7 +174,7 @@
 			width: 30%
 			height: 415px
 			margin: 0 2%
-			background-image: url('../img/job1.jpg')
+			background-image: url('../img/jobs.jpg')
 			position: relative
 			cursor: pointer
 			transition: .5s
@@ -202,16 +208,16 @@
 
 			
 			#job2
-				background-image: url('../img/job2.jpg')
+				background-image: url('../img/jobs.jpg')
 
 			#job3
-				background-image: url('../img/job3.jpg')
+				background-image: url('../img/jobs.jpg')
 
 			#job4
-				background-image: url('../img/job4.jpg')
+				background-image: url('../img/jobs.jpg')
 
 			#job5
-				background-image: url('../img/job5.jpg')
+				background-image: url('../img/jobs.jpg')
 
 		.job-card-cover
 			position: absolute
@@ -221,6 +227,7 @@
 			height: 100%
 			background-color: rgba(0, 0, 0, 0.6)
 			border: 3px solid $primary-color
+			text-align: center
 
 		.job-card-title
 			text-align: center
@@ -228,6 +235,7 @@
 			font-size: 2.2rem
 			transition: .5s
 			font-weight: bold
+			margin-top: 3rem
 
 		.job-card-description
 			text-align: center
