@@ -277,7 +277,9 @@ li {
   width: 30%;
   height: 415px;
   margin: 0 2%;
-  background-image: url("../img/jobs.jpg");
+  background-image: url("../img/proj1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
   position: relative;
   cursor: pointer;
   transition: 0.5s;
